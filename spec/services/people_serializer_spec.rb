@@ -25,7 +25,7 @@ RSpec.describe PeopleSerializer do
         },
         {
           first_name: 'Elliot',
-          city: 'New York City',
+          city: 'NYC',
           birthdate: '1947-05-04',
           unneeded_attribute: '123',
         },
@@ -42,7 +42,7 @@ RSpec.describe PeopleSerializer do
       ]
     end
 
-    it 'serializes the people in an order with a formatted date' do
+    it 'serializes the people in an order with a formatted date and city' do
       is_expected.to eq(expected_data)
     end
 

@@ -48,4 +48,8 @@ class PeopleSerializer
   def format_birthdate(original_value)
     Date.parse(original_value).strftime(BIRTHDATE_FORMAT)
   end
+
+  def format_city(original_value)
+    CityNameFormatter.perform(original_value)
+  end
 end
