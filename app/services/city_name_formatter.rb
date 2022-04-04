@@ -1,7 +1,7 @@
 class CityNameFormatter
   ABBREVIATIONS_AND_NAMES = {
     'LA' => 'Los Angeles',
-    'NYC' => 'New York City'
+    'NYC' => 'New York City',
   }.freeze
 
   def self.perform(name)

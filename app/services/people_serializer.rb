@@ -1,9 +1,9 @@
 require 'date'
 
 class PeopleSerializer
-  ATTRIBUTE_NAMES = %i[first_name city birthdate]
-  SEPARATOR = ', '
-  BIRTHDATE_FORMAT = '%-m/%-d/%Y'
+  ATTRIBUTE_NAMES = %i[first_name city birthdate].freeze
+  SEPARATOR = ', '.freeze
+  BIRTHDATE_FORMAT = '%-m/%-d/%Y'.freeze
 
   def self.perform(people_attributes:, sort_by:)
     new(people_attributes:, sort_by:).perform
