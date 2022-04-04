@@ -18,11 +18,11 @@ class PeopleController
     [
       *SerializedDataParser.perform(
         data: params[:dollar_format],
-        separator: '$'
+        separator: '$',
       ),
       *SerializedDataParser.perform(
         data: params[:percent_format],
-        separator: '%'
+        separator: '%',
       ),
     ]
   end
